@@ -169,8 +169,6 @@ let
           #
           # completion
           #
-          snippets-nvim
-          vim-vsnip
           completion-nvim
           completion-buffers
           completion-treesitter
