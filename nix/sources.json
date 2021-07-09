@@ -1,0 +1,38 @@
+{
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "e0ca65c81a2d7a4d82a189f1e23a48d59ad42070",
+        "sha256": "1pq9nh1d8nn3xvbdny8fafzw87mj7gsmp6pxkdl65w2g18rmcmzx",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/e0ca65c81a2d7a4d82a189f1e23a48d59ad42070.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4c0834929cafb7478a5e82616d484578a80a3e41",
+        "sha256": "1ld29fsviq5ax1drh25fxqcxi44g3cisf5hfib29d0qxjqlicbdf",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/4c0834929cafb7478a5e82616d484578a80a3e41.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-plug": {
+        "branch": "master",
+        "description": ":hibiscus: Minimalist Vim Plugin Manager",
+        "homepage": "",
+        "owner": "junegunn",
+        "repo": "vim-plug",
+        "rev": "fc2813ef4484c7a5c080021ceaa6d1f70390d920",
+        "sha256": "0fsl8w17z15sj21x5gd5ah5p5fjsnk0gzdx2n2p0jnkcb05bwzck",
+        "type": "tarball",
+        "url": "https://github.com/junegunn/vim-plug/archive/fc2813ef4484c7a5c080021ceaa6d1f70390d920.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
