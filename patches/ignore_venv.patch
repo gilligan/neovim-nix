@@ -1,0 +1,28 @@
+diff --git a/coq/__main__.py b/coq/__main__.py
+index d6dd796d..b2734da1 100644
+--- a/coq/__main__.py
++++ b/coq/__main__.py
+@@ -133,19 +133,10 @@ if command == "deps":
+ 
+ elif command == "run":
+     try:
+-        lock = _LOCK_FILE.read_text()
+-    except FileNotFoundError:
+-        lock = ""
+-    try:
+-        if not _IN_VENV:
+-            raise ImportError()
+-        elif lock != _REQ:
+-            raise ImportError()
+-        else:
+-            import pynvim
+-            import pynvim_pp
+-            import std2
+-            import yaml
++        import pynvim
++        import pynvim_pp
++        import std2
++        import yaml
+     except ImportError as e:
+         msg = f"""
+         Please update dependencies using :COQdeps

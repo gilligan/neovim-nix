@@ -3,52 +3,32 @@
 }:
 
 let
-  inherit (pkgs) lib vimUtils;
+  inherit (pkgs) lib vimUtils python39;
   inherit (vimUtils) buildVimPlugin buildVimPluginFrom2Nix;
 
   solarized8 = buildVimPlugin {
     name = "vim-solarized8-04-24-21";
-    src = pkgs.fetchgit {
-      url = "https://github.com/lifepillar/vim-solarized8.git";
-      rev = "28b81a4263054f9584a98f94cca3e42815d44725";
-      sha256 = "sha256:0vq0fxsdy0mk2zpbd1drrrxnbd44r39gqzp0s71vh9q4bnww7jds";
-    };
+    src = sources.vim-solarized8;
   };
 
   vim-textobj-line = buildVimPlugin {
     name = "textobj-line";
-    src = pkgs.fetchgit {
-      url = "https://github.com/kana/vim-textobj-line.git";
-      rev = "0a78169a33c7ea7718b9fa0fad63c11c04727291";
-      sha256 = "sha256:0mppgcmb83wpvn33vadk0wq6w6pg9cq37818d1alk6ka0fdj7ack";
-    };
+    src = sources.vim-textobj-line;
   };
 
   vim-textobj-entire = buildVimPlugin {
     name = "textobj-entire";
-    src = pkgs.fetchgit {
-      url = "https://github.com/kana/vim-textobj-entire.git";
-      rev = "64a856c9dff3425ed8a863b9ec0a21dbaee6fb3a";
-      sha256 = "sha256:0kv0s85wbcxn9hrvml4hdzbpf49b1wwr3nk6gsz3p5rvfs6fbvmm";
-    };
+    src = sources.vim-textobj-entire;
   };
 
   vim-operator-flashy = buildVimPlugin {
     name = "vim-operator-flashy";
-    src = pkgs.fetchgit {
-      url = "https://github.com/haya14busa/vim-operator-flashy.git";
-      rev = "b24673a9b0d5d60b26d202deb13d4ebf90d7a2ae";
-      sha256 = "sha256:102va7cl1fyqm4yh0d6i773mgbfwlf9lpzc4sb3h2jgn7b1knr88";
-    };
+    src = sources.vim-operator-flashy;
   };
 
   vim-projectlocal = buildVimPlugin {
     name = "vim-projectlocal";
-    src = pkgs.fetchgit {
-      url = "https://github.com/krisajenkins/vim-projectlocal.git";
-      rev = "d1c3d84697727202917793b17f3e2a68fc9f09f5";
-      sha256 = "sha256:03g204zk0p33q72bkampk76m7r0zw25hxasfaisl4kdrrwpbkr9z";
-    };
+    src = sources.vim-projectlocal;
   };
 
   plugin-settings = buildVimPlugin {
@@ -56,6 +36,35 @@ let
     src = ./config;
     buildInputs = with pkgs; [ git ];
   };
+
+  std2 = python39.pkgs.buildPythonPackage {
+    src = sources.std2;
+    version = "git";
+    pname = "coq-nvim-std2";
+    doCheck = false;
+  };
+
+  pynvim_pp = python39.pkgs.buildPythonPackage {
+    src = sources.pynvim_pp;
+    propagatedBuildInputs = [ python39.pkgs.pynvim ];
+    pname = "coq-nvim-pynvim-pp";
+    version = "git";
+    doCheck = false;
+  };
+
+  coq-nvim =
+    let
+      coqPythonEnv = python39.withPackages (ps: with ps; [ std2 pynvim_pp pynvim pyyaml ]);
+    in
+    buildVimPlugin {
+      name = "coq_nvim";
+      src = sources.coq_nvim;
+      buildInputs = with pkgs; [ coqPythonEnv sqlite ];
+      patches = [ ./patches/ignore_venv.patch ];
+      postInstall = ''
+        cp ${./coq-config.yml} $out/config/defaults.yml
+      '';
+    };
 
   tree-sitter-grammars = buildVimPluginFrom2Nix rec {
     pname = "tree-sitter-grammars";
@@ -81,7 +90,7 @@ let
 
   neovim = pkgs.neovim.override {
     withNodeJs = true;
-    extraPython3Packages = (_: [ ]);
+    extraPython3Packages = (ps: with ps; [ std2 pynvim_pp pynvim pyyaml ]);
     configure = {
       customRC = ''
         ${builtins.readFile ./init.vim}
@@ -169,9 +178,7 @@ let
           #
           # completion
           #
-          completion-nvim
-          completion-buffers
-          completion-treesitter
+          coq-nvim
 
           #
           # local plugin settings

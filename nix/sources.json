@@ -1,14 +1,26 @@
 {
+    "coq_nvim": {
+        "branch": "coq",
+        "description": "Fast as FUCK nvim completion. SQLite, concurrent scheduler, hundreds of hours of optimization.",
+        "homepage": "",
+        "owner": "ms-jpq",
+        "repo": "coq_nvim",
+        "rev": "89839b861c78be85861214bf0263093d612d0a90",
+        "sha256": "0jl96vfhrijaf4das5rixsl3fi4dp76rz8d70mldfbx34bi6zay2",
+        "type": "tarball",
+        "url": "https://github.com/ms-jpq/coq_nvim/archive/89839b861c78be85861214bf0263093d612d0a90.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
         "homepage": "https://github.com/nmattia/niv",
         "owner": "nmattia",
         "repo": "niv",
-        "rev": "e0ca65c81a2d7a4d82a189f1e23a48d59ad42070",
-        "sha256": "1pq9nh1d8nn3xvbdny8fafzw87mj7gsmp6pxkdl65w2g18rmcmzx",
+        "rev": "5830a4dd348d77e39a0f3c4c762ff2663b602d4c",
+        "sha256": "1d3lsrqvci4qz2hwjrcnd8h5vfkg8aypq3sjd4g3izbc8frwz5sm",
         "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/e0ca65c81a2d7a4d82a189f1e23a48d59ad42070.tar.gz",
+        "url": "https://github.com/nmattia/niv/archive/5830a4dd348d77e39a0f3c4c762ff2663b602d4c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
@@ -17,10 +29,46 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4c0834929cafb7478a5e82616d484578a80a3e41",
-        "sha256": "1ld29fsviq5ax1drh25fxqcxi44g3cisf5hfib29d0qxjqlicbdf",
+        "rev": "7dcb25726b3a5ed3896fe38362f631ca5bed4a6e",
+        "sha256": "05akkbvrnsv00kgpabsb5ggh3a2nc84kaymz57bwdajy384gykhg",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/4c0834929cafb7478a5e82616d484578a80a3e41.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/7dcb25726b3a5ed3896fe38362f631ca5bed4a6e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "pynvim_pp": {
+        "branch": "pp",
+        "description": null,
+        "homepage": null,
+        "owner": "ms-jpq",
+        "repo": "pynvim_pp",
+        "rev": "dc6a82affc28422d5bf0cffad1a01a16822518eb",
+        "sha256": "0av8y1bc7syccxay0181yqii19bxpldj31r9rhbyrjxqx1j90ryi",
+        "type": "tarball",
+        "url": "https://github.com/ms-jpq/pynvim_pp/archive/dc6a82affc28422d5bf0cffad1a01a16822518eb.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "std2": {
+        "branch": "std",
+        "description": null,
+        "homepage": null,
+        "owner": "ms-jpq",
+        "repo": "std2",
+        "rev": "769d5491fd65d6ad651409f6dc46d9edbbb333d4",
+        "sha256": "1n7nv9j4hdfg3q6z40whmpcy6jqyaj4pccdfi55acpr4fk5nm84m",
+        "type": "tarball",
+        "url": "https://github.com/ms-jpq/std2/archive/769d5491fd65d6ad651409f6dc46d9edbbb333d4.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-operator-flashy": {
+        "branch": "master",
+        "description": ":flashlight: Highlight yanked area",
+        "homepage": "http://www.vim.org/scripts/script.php?script_id=5293",
+        "owner": "haya14busa",
+        "repo": "vim-operator-flashy",
+        "rev": "b24673a9b0d5d60b26d202deb13d4ebf90d7a2ae",
+        "sha256": "102va7cl1fyqm4yh0d6i773mgbfwlf9lpzc4sb3h2jgn7b1knr88",
+        "type": "tarball",
+        "url": "https://github.com/haya14busa/vim-operator-flashy/archive/b24673a9b0d5d60b26d202deb13d4ebf90d7a2ae.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "vim-plug": {
@@ -29,10 +77,58 @@
         "homepage": "",
         "owner": "junegunn",
         "repo": "vim-plug",
-        "rev": "fc2813ef4484c7a5c080021ceaa6d1f70390d920",
-        "sha256": "0fsl8w17z15sj21x5gd5ah5p5fjsnk0gzdx2n2p0jnkcb05bwzck",
+        "rev": "68488fd7a388d31704643a3257eb97920bcdd54a",
+        "sha256": "025xwbzip1p7m8jhv0qh5m6bcf6yw6rr3zm22sknhzzls3byphmm",
         "type": "tarball",
-        "url": "https://github.com/junegunn/vim-plug/archive/fc2813ef4484c7a5c080021ceaa6d1f70390d920.tar.gz",
+        "url": "https://github.com/junegunn/vim-plug/archive/68488fd7a388d31704643a3257eb97920bcdd54a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-projectlocal": {
+        "branch": "master",
+        "description": "Per-project .vimrc files.",
+        "homepage": null,
+        "owner": "krisajenkins",
+        "repo": "vim-projectlocal",
+        "rev": "d1c3d84697727202917793b17f3e2a68fc9f09f5",
+        "sha256": "03g204zk0p33q72bkampk76m7r0zw25hxasfaisl4kdrrwpbkr9z",
+        "type": "tarball",
+        "url": "https://github.com/krisajenkins/vim-projectlocal/archive/d1c3d84697727202917793b17f3e2a68fc9f09f5.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-solarized8": {
+        "branch": "master",
+        "description": "Optimized Solarized colorschemes. Best served with true-color terminals!",
+        "homepage": null,
+        "owner": "lifepillar",
+        "repo": "vim-solarized8",
+        "rev": "28b81a4263054f9584a98f94cca3e42815d44725",
+        "sha256": "0vq0fxsdy0mk2zpbd1drrrxnbd44r39gqzp0s71vh9q4bnww7jds",
+        "type": "tarball",
+        "url": "https://github.com/lifepillar/vim-solarized8/archive/28b81a4263054f9584a98f94cca3e42815d44725.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-textobj-entire": {
+        "branch": "master",
+        "description": "Vim plugin: Text objects for entire buffer",
+        "homepage": "http://www.vim.org/scripts/script.php?script_id=2610",
+        "owner": "kana",
+        "repo": "vim-textobj-entire",
+        "rev": "64a856c9dff3425ed8a863b9ec0a21dbaee6fb3a",
+        "sha256": "0kv0s85wbcxn9hrvml4hdzbpf49b1wwr3nk6gsz3p5rvfs6fbvmm",
+        "type": "tarball",
+        "url": "https://github.com/kana/vim-textobj-entire/archive/64a856c9dff3425ed8a863b9ec0a21dbaee6fb3a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-textobj-line": {
+        "branch": "master",
+        "description": "Vim plugin: Text objects for the current line",
+        "homepage": "http://www.vim.org/scripts/script.php?script_id=3886",
+        "owner": "kana",
+        "repo": "vim-textobj-line",
+        "rev": "1a6780d29adcf7e464e8ddbcd0be0a9df1a37339",
+        "sha256": "0di9y3nbb9raj0lj7d76cjic4vs1msrqk3gzsl3r7b1qr0y3mdw7",
+        "type": "tarball",
+        "url": "https://github.com/kana/vim-textobj-line/archive/1a6780d29adcf7e464e8ddbcd0be0a9df1a37339.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

@@ -1,0 +1,185 @@
+---
+xdg: True
+auto_start: False
+
+keymap:
+  recommended: True
+  pre_select: True
+
+  manual_complete: <c-space>
+  repeat: null
+  bigger_preview: <c-k>
+  jump_to_mark: <c-h>
+  eval_snips: null
+
+match:
+  unifying_chars:
+    - "_"
+    - "-"
+  max_results: 33
+  proximate_lines: 16
+  exact_matches: 2
+  look_ahead: 2
+  fuzzy_cutoff: 0.6
+
+weights:
+  prefix_matches: 2.0
+  edit_distance: 1.5
+  recency: 1.0
+  proximity: 0.5
+
+display:
+  ghost_text:
+    enabled: True
+    context:
+      - " 〈 "
+      - " 〉"
+    highlight_group: Comment
+
+  pum:
+    fast_close: True
+
+    y_max_len: 16
+    y_ratio: 0.3
+
+    x_max_len: 66
+    x_truncate_len: 12
+
+    ellipsis: …
+    kind_context:
+      - " ["
+      - "]"
+    source_context:
+      - "「"
+      - "」"
+
+  preview:
+    x_max_len: 88
+    resolve_timeout: 0.09
+    border: [ ["", "NormalFloat"], ["", "NormalFloat"], ["", "NormalFloat"], [" ", "NormalFloat"], ["", "NormalFloat"], ["", "NormalFloat"], ["", "NormalFloat"], [" ", "NormalFloat"] ]
+    positions:
+      north: 1
+      south: 2
+      west: 3
+      east: 4
+
+  time_fmt: "%Y-%m-%d %H:%M"
+  mark_highlight_group: Pmenu
+
+  icons:
+    mode: long
+    spacing: 1
+    aliases:
+      Conditional: Keyword
+      Float: Number
+      Include: Property
+      Label: Keyword
+      Member: Property
+      Repeat: Keyword
+      Structure: Struct
+      Type: TypeParameter
+    mappings:
+      Boolean: ""
+      Character: ""
+      Class: ""
+      Color: ""
+      Constant: ""
+      Constructor: ""
+      Enum: ""
+      EnumMember: ""
+      Event: "ﳅ"
+      Field: ""
+      File: ""
+      Folder: "ﱮ"
+      Function: "ﬦ"
+      Interface: ""
+      Keyword: ""
+      Method: ""
+      Module: ""
+      Number: ""
+      Operator: "Ψ"
+      Parameter: ""
+      Property: "ﭬ"
+      Reference: ""
+      Snippet: ""
+      String: ""
+      Struct: "ﯟ"
+      Text: ""
+      TypeParameter: ""
+      Unit: ""
+      Value: ""
+      Variable: "ﳛ"
+
+limits:
+  index_cutoff: 333333
+  idle_timeout: 1.88
+
+  completion_auto_timeout: 0.088
+  completion_manual_timeout: 0.66
+
+  download_retries: 6
+  download_timeout: 66.0
+
+clients:
+  tabnine:
+    enabled: False
+    short_name: "T9"
+    weight_adjust: -0.1
+
+  third_party:
+    enabled: True
+    short_name: "3P"
+    weight_adjust: 0
+
+  tmux:
+    enabled: True
+    short_name: "TMUX"
+    match_syms: False
+    weight_adjust: 0
+
+  buffers:
+    enabled: True
+    short_name: "BUF"
+    match_syms: False
+    same_filetype: False
+    weight_adjust: 0
+
+  tree_sitter:
+    enabled: True
+    short_name: "TS"
+    path_sep: " ⇊"
+    search_context: 168
+    slow_threshold: 0.168
+    weight_adjust: 0
+
+  paths:
+    enabled: True
+    short_name: "PATH"
+    resolution:
+      - cwd
+      - file
+    path_seps: []
+    preview_lines: 6
+    weight_adjust: 0
+
+  snippets:
+    enabled: True
+    short_name: "SNIP"
+    weight_adjust: 0
+    user_path: null
+    warn:
+      - missing
+      - outdated
+
+  tags:
+    enabled: True
+    short_name: "TAG"
+    parent_scope: " ⇊"
+    path_sep: " ⇉ "
+    weight_adjust: 0
+
+  lsp:
+    enabled: True
+    short_name: "LSP"
+    resolve_timeout: 0.06
+    weight_adjust: 0.3

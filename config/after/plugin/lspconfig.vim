@@ -5,6 +5,7 @@ endif
 lua <<EOF
 
 local nvim_lsp = require('lspconfig')
+local coq = require('coq')
 local protocol = require'vim.lsp.protocol'
 
 -- Use an on_attach function to only map the following keys 
@@ -45,13 +46,11 @@ local on_attach = function(client, bufnr)
     vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
     vim.api.nvim_command [[augroup END]]
   end
-
-  require'completion'.on_attach(client, bufnr)
 end
 
 
 -- Enable the following language servers
-local servers = { "bashls", "gopls", "pyls", "rnix", "rust_analyzer", "terraformls", "vimls" }
+local servers = { "bashls", "gopls", "rnix", "rust_analyzer", "terraformls", "vimls" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup({ on_attach = on_attach, capabilities = capabilities, flags = flags })
 end
