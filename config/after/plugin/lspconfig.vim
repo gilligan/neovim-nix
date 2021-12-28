@@ -52,14 +52,14 @@ end
 -- Enable the following language servers
 local servers = { "bashls", "gopls", "rnix", "rust_analyzer", "terraformls", "vimls" }
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup({ on_attach = on_attach, capabilities = capabilities, flags = flags })
+  nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities({ on_attach = on_attach, capabilities = capabilities, flags = flags }))
 end
 
 -- Set right command for haskell-language-server
-nvim_lsp.hls.setup{
+nvim_lsp.hls.setup(coq.lsp_ensure_capabilities({
   cmd = { "haskell-language-server", "--lsp" },
   on_attach = on_attach,
   capabilities = capabilities,
   flags = flags
-}
+}))
 EOF

@@ -62,31 +62,9 @@ let
       buildInputs = with pkgs; [ coqPythonEnv sqlite ];
       patches = [ ./patches/ignore_venv.patch ];
       postInstall = ''
-        cp ${./coq-config.yml} $out/config/defaults.yml
+        cp ${./files/coq-config.yml} $out/config/defaults.yml
       '';
     };
-
-  tree-sitter-grammars = buildVimPluginFrom2Nix rec {
-    pname = "tree-sitter-grammars";
-    version = pkgs.tree-sitter.version;
-    banned = (map (v: "tree-sitter-${v}") [
-      "agda"
-      "fluent"
-      "svelte"
-      "swift"
-      "verilog"
-    ]);
-    src = pkgs.runCommandNoCC "tree-sitter-grammars" { } ''
-      mkdir -p $out/parser
-      ${builtins.concatStringsSep "\n" (builtins.attrValues (builtins.mapAttrs
-      (n: v: "ln -s ${v}/parser $out/parser/${
-        builtins.replaceStrings ["-"] ["_"] (pkgs.lib.removePrefix "tree-sitter-" n)
-        }.so")
-        (lib.filterAttrs (n: _: !builtins.elem n banned) pkgs.tree-sitter.builtGrammars)
-        ))}
-    '';
-    dependencies = [ ];
-  };
 
   neovim = pkgs.neovim.override {
     withNodeJs = true;
@@ -169,8 +147,7 @@ let
           # lsp stuff / neovim 0.5
           #
           nvim-lspconfig
-          nvim-treesitter
-          tree-sitter-grammars
+          (nvim-treesitter.withPlugins (_: pkgs.tree-sitter.allGrammars))
           lspsaga-nvim
           lsp-colors-nvim
           trouble-nvim
