@@ -11,6 +11,18 @@
         "url": "https://github.com/ms-jpq/coq_nvim/archive/89839b861c78be85861214bf0263093d612d0a90.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "fzf-lsp.nvim": {
+        "branch": "main",
+        "description": "Enable the power of fzf fuzzy search for the neovim built in lsp",
+        "homepage": "",
+        "owner": "gfanto",
+        "repo": "fzf-lsp.nvim",
+        "rev": "19a6f405e4a6eb74788393390d945bd156d559b3",
+        "sha256": "0nq9nfviyly136xhjzdvmhvj7flz44pl5as0npa4d13ng3gs451p",
+        "type": "tarball",
+        "url": "https://github.com/gfanto/fzf-lsp.nvim/archive/19a6f405e4a6eb74788393390d945bd156d559b3.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",

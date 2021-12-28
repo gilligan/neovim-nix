@@ -66,6 +66,17 @@ let
       '';
     };
 
+  fzf-lsp = buildVimPlugin {
+    src = sources."fzf-lsp.nvim";
+    version = "git";
+    pname = "fzf-lsp";
+    buildInputs = with pkgs; [ bat makeWrapper ];
+    postInstall = ''
+      wrapProgram $out/bin/preview.sh --prefix PATH : ${lib.makeBinPath [ pkgs.bat ]} \
+        --set BAT_THEME "Solarized (light)"
+    '';
+  };
+
   neovim = pkgs.neovim.override {
     withNodeJs = true;
     extraPython3Packages = (ps: with ps; [ std2 pynvim_pp pynvim pyyaml ]);
@@ -99,7 +110,6 @@ let
           #
           # movement
           #
-          #mark.vim
           vim-sneak
           targets-vim
           vim-operator-user
@@ -108,7 +118,6 @@ let
           #
           # scm
           #
-          #vim-gitgutter
           vim-mergetool
 
           #
@@ -123,13 +132,13 @@ let
           #
           vimproc
           vim-tmux-navigator
-          #neoterm
 
           # navigation / buffers
           vim-togglelist
           nerdcommenter
           zoomwintab-vim
           fzf-vim
+          fzf-lsp
           nerdtree
           nerdtree-git-plugin
 
@@ -148,7 +157,6 @@ let
           #
           nvim-lspconfig
           (nvim-treesitter.withPlugins (_: pkgs.tree-sitter.allGrammars))
-          lspsaga-nvim
           lsp-colors-nvim
           trouble-nvim
 
