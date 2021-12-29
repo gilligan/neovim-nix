@@ -35,7 +35,7 @@ let
 
   plugin-settings = buildVimPlugin {
     name = "plugin-settings";
-    src = ./config;
+    src = "${./config}";
     buildInputs = with pkgs; [ git ];
   };
 
