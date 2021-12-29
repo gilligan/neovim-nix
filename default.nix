@@ -6,6 +6,7 @@ let
   inherit (pkgs) lib vimUtils python39;
   inherit (vimUtils) buildVimPlugin buildVimPluginFrom2Nix;
 
+
   coc-settings = pkgs.writeTextDir "coc-settings.json" (builtins.readFile ./coc-settings.json);
 
   solarized8 = buildVimPlugin {
