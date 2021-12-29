@@ -129,6 +129,7 @@ let
           coc-fzf
           coc-yaml
           coc-snippets
+          coc-vimlsp
 
           #
           # local plugin settings
