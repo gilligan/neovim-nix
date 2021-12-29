@@ -1,0 +1,24 @@
+diff --git a/lib/index.js b/lib/index.js
+index 14e3d58..3636c6e 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -8330,18 +8330,7 @@ var Ctx2 = class {
+     return this.extCtx.subscriptions;
+   }
+   resolveBin() {
+-    let bin = (0, import_path3.join)(this.extCtx.storagePath, process.platform === "win32" ? "rust-analyzer.exe" : "rust-analyzer");
+-    if (this.config.serverPath) {
+-      bin = this.config.serverPath;
+-      if (bin.startsWith("~/")) {
+-        bin = bin.replace("~", (0, import_os.homedir)());
+-      }
+-      bin = import_which.default.sync(bin, { nothrow: true }) || bin;
+-    }
+-    if (!(0, import_fs3.existsSync)(bin)) {
+-      return;
+-    }
+-    return bin;
++    return import_which.default.sync("rust-analyzer", { nothrow: true });
+   }
+   async checkUpdate(auto = true) {
+     if (this.config.serverPath) {

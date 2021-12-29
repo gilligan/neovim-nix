@@ -6,6 +6,8 @@ let
   inherit (pkgs) lib vimUtils python39;
   inherit (vimUtils) buildVimPlugin buildVimPluginFrom2Nix;
 
+  coc-settings = pkgs.writeTextDir "coc-settings.json" (builtins.readFile ./coc-settings.json);
+
   solarized8 = buildVimPlugin {
     name = "vim-solarized8-04-24-21";
     src = sources.vim-solarized8;
@@ -37,52 +39,18 @@ let
     buildInputs = with pkgs; [ git ];
   };
 
-  std2 = python39.pkgs.buildPythonPackage {
-    src = sources.std2;
+  coc-nvim = buildVimPlugin {
+    src = sources."coc.nvim";
     version = "git";
-    pname = "coq-nvim-std2";
-    doCheck = false;
-  };
-
-  pynvim_pp = python39.pkgs.buildPythonPackage {
-    src = sources.pynvim_pp;
-    propagatedBuildInputs = [ python39.pkgs.pynvim ];
-    pname = "coq-nvim-pynvim-pp";
-    version = "git";
-    doCheck = false;
-  };
-
-  coq-nvim =
-    let
-      coqPythonEnv = python39.withPackages (ps: with ps; [ std2 pynvim_pp pynvim pyyaml ]);
-    in
-    buildVimPlugin {
-      name = "coq_nvim";
-      src = sources.coq_nvim;
-      buildInputs = with pkgs; [ coqPythonEnv sqlite ];
-      patches = [ ./patches/ignore_venv.patch ];
-      postInstall = ''
-        cp ${./files/coq-config.yml} $out/config/defaults.yml
-      '';
-    };
-
-  fzf-lsp = buildVimPlugin {
-    src = sources."fzf-lsp.nvim";
-    version = "git";
-    pname = "fzf-lsp";
-    buildInputs = with pkgs; [ bat makeWrapper ];
-    postInstall = ''
-      wrapProgram $out/bin/preview.sh --prefix PATH : ${lib.makeBinPath [ pkgs.bat ]} \
-        --set BAT_THEME "Solarized (light)"
-    '';
+    pname = "coc-nvim";
   };
 
   neovim = pkgs.neovim.override {
     withNodeJs = true;
-    extraPython3Packages = (ps: with ps; [ std2 pynvim_pp pynvim pyyaml ]);
     configure = {
       customRC = ''
         ${builtins.readFile ./init.vim}
+        let g:coc_config_home = '${coc-settings}'
       '';
       packages.myPlugins = with pkgs.vimPlugins; {
         start = [
@@ -126,6 +94,7 @@ let
           vim-airline
           vim-airline-themes
           solarized8
+          haskell-vim
 
           #
           # terminal / process integration
@@ -138,7 +107,6 @@ let
           nerdcommenter
           zoomwintab-vim
           fzf-vim
-          fzf-lsp
           nerdtree
           nerdtree-git-plugin
 
@@ -153,17 +121,14 @@ let
           vim-devicons
 
           #
-          # lsp stuff / neovim 0.5
+          # lsp: coc
           #
-          nvim-lspconfig
-          (nvim-treesitter.withPlugins (_: pkgs.tree-sitter.allGrammars))
-          lsp-colors-nvim
-          trouble-nvim
-
-          #
-          # completion
-          #
-          coq-nvim
+          coc-nvim
+          (coc-rust-analyzer.overrideAttrs (old: { patches = [ ./patches/coc-rust-analyzer-path.patch ]; }))
+          coc-json
+          coc-fzf
+          coc-yaml
+          coc-snippets
 
           #
           # local plugin settings

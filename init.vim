@@ -55,68 +55,10 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on
 
 "
-" colorscheme settings
-"
-set t_Co=256
-set t_ut=
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set termguicolors
-
-colo solarized8_high
-"colo solarized-high
-"let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-let g:neosolarized_contrast = "high"
-let g:neosolarized_visibility = "high"
-let g:solarized_extra_hi_groups=1
-
-" tmux color hacking stuff
-set t_8f=^[[38;2;%lu;%lu;%lum
-set t_8b=^[[48;2;%lu;%lu;%lum
-
-"
-" vim airline
-"
-let g:airline_powerline_fonts = 1
-let g:airline_solarized_bg='light'
-let g:airline_theme='solarized'
-let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#languageclient#enabled = 1
-let g:airline#extensions#neomake#enabled = 1
-
-
-"
-" vim-rooter settings
-"
-let g:rooter_patterns = ['Cargo.toml', 'dune-project', 'project.clj', 'build.gradle.kts', 'build.sbt', 'spago.dhall', 'hie.yaml',  '.git/']
-
-"
-" neoterm settings
-"
-let g:neoterm_default_mod = 'botright'
-let g:neoterm_autojump = 1
-let g:neoterm_autoinsert = 1
-
-"
-" neoformat settings
-"
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
-
-"
-" vim-operator-flashy
-"
-map y <Plug>(operator-flashy)
-nmap Y <Plug>(operator-flashy)$
-
-"
 " go to start/end of line
 "
 imap <C-E> <C-O>$
 imap <C-A> <C-O>^
-
 
 "
 " Close things by pressing Q
@@ -135,4 +77,3 @@ function! CloseWindowOrKillBuffer()
   endif
 endfunction
 nnoremap <silent> Q :call CloseWindowOrKillBuffer()<CR>
-

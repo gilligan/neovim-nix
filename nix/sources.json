@@ -1,14 +1,26 @@
 {
-    "coq_nvim": {
-        "branch": "coq",
-        "description": "Fast as FUCK nvim completion. SQLite, concurrent scheduler, hundreds of hours of optimization.",
+    "coc-rust-analyzer": {
+        "branch": "master",
+        "description": "rust-analyzer extension for coc.nvim",
         "homepage": "",
-        "owner": "ms-jpq",
-        "repo": "coq_nvim",
-        "rev": "89839b861c78be85861214bf0263093d612d0a90",
-        "sha256": "0jl96vfhrijaf4das5rixsl3fi4dp76rz8d70mldfbx34bi6zay2",
+        "owner": "fannheyward",
+        "repo": "coc-rust-analyzer",
+        "rev": "b4fe3093d55dd6e0ae654d0bb23295844c15fda5",
+        "sha256": "140nfwbj4qcbq93ynkgmcl9ifgg1hjqzzggcn09ja4ranhpa7n16",
         "type": "tarball",
-        "url": "https://github.com/ms-jpq/coq_nvim/archive/89839b861c78be85861214bf0263093d612d0a90.tar.gz",
+        "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/b4fe3093d55dd6e0ae654d0bb23295844c15fda5.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "coc.nvim": {
+        "branch": "release",
+        "description": "Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers.",
+        "homepage": "",
+        "owner": "neoclide",
+        "repo": "coc.nvim",
+        "rev": "28e7f0376bcb661afa9e3b8b352152b981f5eda3",
+        "sha256": "0liyndwrczxqyryg0w3601b1zvcg7g0dj2ns578zh50xbyk2mgg4",
+        "type": "tarball",
+        "url": "https://github.com/neoclide/coc.nvim/archive/28e7f0376bcb661afa9e3b8b352152b981f5eda3.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "fzf-lsp.nvim": {
@@ -45,30 +57,6 @@
         "sha256": "05akkbvrnsv00kgpabsb5ggh3a2nc84kaymz57bwdajy384gykhg",
         "type": "tarball",
         "url": "https://github.com/NixOS/nixpkgs/archive/7dcb25726b3a5ed3896fe38362f631ca5bed4a6e.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "pynvim_pp": {
-        "branch": "pp",
-        "description": null,
-        "homepage": null,
-        "owner": "ms-jpq",
-        "repo": "pynvim_pp",
-        "rev": "dc6a82affc28422d5bf0cffad1a01a16822518eb",
-        "sha256": "0av8y1bc7syccxay0181yqii19bxpldj31r9rhbyrjxqx1j90ryi",
-        "type": "tarball",
-        "url": "https://github.com/ms-jpq/pynvim_pp/archive/dc6a82affc28422d5bf0cffad1a01a16822518eb.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "std2": {
-        "branch": "std",
-        "description": null,
-        "homepage": null,
-        "owner": "ms-jpq",
-        "repo": "std2",
-        "rev": "769d5491fd65d6ad651409f6dc46d9edbbb333d4",
-        "sha256": "1n7nv9j4hdfg3q6z40whmpcy6jqyaj4pccdfi55acpr4fk5nm84m",
-        "type": "tarball",
-        "url": "https://github.com/ms-jpq/std2/archive/769d5491fd65d6ad651409f6dc46d9edbbb333d4.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "vim-operator-flashy": {
