@@ -1,5 +1,6 @@
-{ pkgs ? import ./nix
-, sources ? import ./nix/sources.nix
+{ system ? builtins.currentSystem
+, pins ? import ./npins
+, pkgs ? import pins.nixpkgs { inherit system; }
 }:
 
 let
@@ -11,27 +12,27 @@ let
 
   solarized8 = buildVimPlugin {
     name = "vim-solarized8-04-24-21";
-    src = sources.vim-solarized8;
+    src = pins.vim-solarized8;
   };
 
   vim-textobj-line = buildVimPlugin {
     name = "textobj-line";
-    src = sources.vim-textobj-line;
+    src = pins.vim-textobj-line;
   };
 
   vim-textobj-entire = buildVimPlugin {
     name = "textobj-entire";
-    src = sources.vim-textobj-entire;
+    src = pins.vim-textobj-entire;
   };
 
   vim-operator-flashy = buildVimPlugin {
     name = "vim-operator-flashy";
-    src = sources.vim-operator-flashy;
+    src = pins.vim-operator-flashy;
   };
 
   vim-projectlocal = buildVimPlugin {
     name = "vim-projectlocal";
-    src = sources.vim-projectlocal;
+    src = pins.vim-projectlocal;
   };
 
   plugin-settings = buildVimPlugin {
@@ -41,7 +42,7 @@ let
   };
 
   coc-nvim = buildVimPlugin {
-    src = sources."coc.nvim";
+    src = pins."coc.nvim";
     version = "git";
     pname = "coc-nvim";
   };

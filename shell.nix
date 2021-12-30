@@ -1,8 +1,10 @@
-{ pkgs ? import ./nix
-, sources ? import ./nix/sources.nix
+{ system ? builtins.currentSystem
+, pins ? import ./npins
+, pkgs ? import pins.nixpkgs { inherit system; }
 }:
 let
-  pre-commit = (import sources."pre-commit-hooks.nix").run {
+  npins = import pins.npins { inherit pkgs; };
+  pre-commit = (import pins."pre-commit-hooks.nix").run {
     src = ./.;
     hooks = {
       nixpkgs-fmt.enable = true;
@@ -10,6 +12,6 @@ let
   };
 in
 pkgs.mkShell {
-  buildInputs = with pkgs; [ niv nixpkgs-fmt ];
+  buildInputs = with pkgs; [ niv nixpkgs-fmt npins ];
   inherit (pre-commit) shellHook;
 }
