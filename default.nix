@@ -143,6 +143,4 @@ let
     };
   };
 in
-{
-  inherit neovim;
-}
+neovim
