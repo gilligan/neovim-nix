@@ -24,6 +24,13 @@
       "revision": "19a6f405e4a6eb74788393390d945bd156d559b3",
       "hash": "0nq9nfviyly136xhjzdvmhvj7flz44pl5as0npa4d13ng3gs451p"
     },
+    "jq": {
+      "type": "Git",
+      "repository_url": "https://github.com/stedolan/jq.git",
+      "branch": "master",
+      "revision": "a9f97e9e61a910a374a5d768244e8ad63f407d3e",
+      "hash": "1gd74ywsp4byn01pbzf5gmszwa8pd325pwd95qdcyb7vdn70b04y"
+    },
     "nixpkgs": {
       "type": "GitHub",
       "repository": "nixpkgs",
