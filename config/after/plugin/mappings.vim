@@ -4,6 +4,13 @@
 imap <C-E> <C-O>$
 imap <C-A> <C-O>^
 
+" use arrow keys for window manipulation
+nnoremap <silent> <Up> <C-w>+<C-w>+
+nnoremap <silent> <Down> <C-w>-<C-w>-
+nnoremap <silent> <Left> <C-w><<C-w><
+nnoremap <silent> <Right> <C-w>><C-w>>
+
+
 "
 " Close things by pressing Q
 "
