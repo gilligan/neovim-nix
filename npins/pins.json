@@ -5,24 +5,24 @@
       "repository": "coc-rust-analyzer",
       "owner": "fannheyward",
       "branch": "master",
-      "revision": "b4fe3093d55dd6e0ae654d0bb23295844c15fda5",
-      "hash": "140nfwbj4qcbq93ynkgmcl9ifgg1hjqzzggcn09ja4ranhpa7n16"
+      "revision": "2f4b18ecb0c1b0363eee4a09704473b0d3689d28",
+      "hash": "17g4jgk92nd3n4jlkjls7cagq0h6izzasann2bvd9qjm2cc5kk84"
     },
     "coc.nvim": {
       "type": "GitHub",
       "repository": "coc.nvim",
       "owner": "neoclide",
       "branch": "release",
-      "revision": "28e7f0376bcb661afa9e3b8b352152b981f5eda3",
-      "hash": "0liyndwrczxqyryg0w3601b1zvcg7g0dj2ns578zh50xbyk2mgg4"
+      "revision": "a9dee8531de92d2a90c66e6a0494f20855035a8a",
+      "hash": "1264185lvxmz3wmr7x4mr75a9idnnasnk2x8z5mk9kdq1ggmp5rw"
     },
     "fzf-lsp.nvim": {
       "type": "GitHub",
       "repository": "fzf-lsp.nvim",
       "owner": "gfanto",
       "branch": "main",
-      "revision": "19a6f405e4a6eb74788393390d945bd156d559b3",
-      "hash": "0nq9nfviyly136xhjzdvmhvj7flz44pl5as0npa4d13ng3gs451p"
+      "revision": "bd55968ff9e62a1760a7bc96126b021cc34d0449",
+      "hash": "0znnwgdpkhnd029ybfyyh3jj3l11a20g5zynw33xjdwkh4w68nrc"
     },
     "jq": {
       "type": "Git",
@@ -36,8 +36,8 @@
       "repository": "nixpkgs",
       "owner": "NixOS",
       "branch": "nixpkgs-unstable",
-      "revision": "5c37ad87222cfc1ec36d6cd1364514a9efc2f7f2",
-      "hash": "1r74afnalgcbpv7b9sbdfbnx1kfj0kp1yfa60bbbv27n36vqdhbb"
+      "revision": "46821ea01c8f54d2a20f5a503809abfc605269d7",
+      "hash": "093daxh4yib44ddq2xgbnvk0kxgk754sfagqiplgd5rh7zmb1bpb"
     },
     "npins": {
       "type": "GitHub",
@@ -68,8 +68,8 @@
       "repository": "vim-plug",
       "owner": "junegunn",
       "branch": "master",
-      "revision": "68488fd7a388d31704643a3257eb97920bcdd54a",
-      "hash": "025xwbzip1p7m8jhv0qh5m6bcf6yw6rr3zm22sknhzzls3byphmm"
+      "revision": "e300178a0e2fb04b56de8957281837f13ecf0b27",
+      "hash": "0bfgadn31n516x0m0kr88jk9x79rl6zllnwij759wpazmw1p0xg8"
     },
     "vim-projectlocal": {
       "type": "GitHub",
