@@ -5,24 +5,24 @@
       "repository": "coc-rust-analyzer",
       "owner": "fannheyward",
       "branch": "master",
-      "revision": "2f4b18ecb0c1b0363eee4a09704473b0d3689d28",
-      "hash": "17g4jgk92nd3n4jlkjls7cagq0h6izzasann2bvd9qjm2cc5kk84"
+      "revision": "143ed8e7fb0c49fb54b44ff56fa25c6b59a97b4a",
+      "hash": "1xc5bgqn0qjkm838ik6gpqc7z9069k79q5hm81lg229zkzixk94r"
     },
     "coc.nvim": {
       "type": "GitHub",
       "repository": "coc.nvim",
       "owner": "neoclide",
       "branch": "release",
-      "revision": "a9dee8531de92d2a90c66e6a0494f20855035a8a",
-      "hash": "1264185lvxmz3wmr7x4mr75a9idnnasnk2x8z5mk9kdq1ggmp5rw"
+      "revision": "208bbd03068a44c7307238aa59952b38ddd0fae4",
+      "hash": "1w160lfzjayxmdbwxzm3pmxd15ziygs9asljmp9wdhh8jfn07015"
     },
     "fzf-lsp.nvim": {
       "type": "GitHub",
       "repository": "fzf-lsp.nvim",
       "owner": "gfanto",
       "branch": "main",
-      "revision": "bd55968ff9e62a1760a7bc96126b021cc34d0449",
-      "hash": "0znnwgdpkhnd029ybfyyh3jj3l11a20g5zynw33xjdwkh4w68nrc"
+      "revision": "b02056f3c4b9d64d876bbf0a58d20791345a9364",
+      "hash": "16n78ylicrd7lh41g5hvd9vnnhkwbvj28c190k5zvrblyyhipn93"
     },
     "jq": {
       "type": "Git",
@@ -36,16 +36,16 @@
       "repository": "nixpkgs",
       "owner": "NixOS",
       "branch": "nixpkgs-unstable",
-      "revision": "46821ea01c8f54d2a20f5a503809abfc605269d7",
-      "hash": "093daxh4yib44ddq2xgbnvk0kxgk754sfagqiplgd5rh7zmb1bpb"
+      "revision": "1882c6b7368fd284ad01b0a5b5601ef136321292",
+      "hash": "0zg7ak2mcmwzi2kg29g4v9fvbvs0viykjsg2pwaphm1fi13s7s0i"
     },
     "npins": {
       "type": "GitHub",
       "repository": "npins",
       "owner": "andir",
       "branch": "master",
-      "revision": "fd22eef6738232477fba10046e2b00406656b09d",
-      "hash": "04h1k1d8qq6ddb8xx3xfz4zk329myfygqva7m56mc00ygnj0cgrp"
+      "revision": "c8ba274402569555ddf6fa15c47136ab51115439",
+      "hash": "0db8gl2a43vb8y7qqwkih22d5lgrz263q6dv7dag864sshpvadgg"
     },
     "pre-commit-hooks.nix": {
       "type": "GitHub",
