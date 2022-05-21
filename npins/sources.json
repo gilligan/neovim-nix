@@ -1,0 +1,161 @@
+{
+  "pins": {
+    "coc-rust-analyzer": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "fannheyward",
+        "repo": "coc-rust-analyzer"
+      },
+      "branch": "master",
+      "revision": "09aaa4bca4492c94f4048c8c5dd59e27b36329d4",
+      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/09aaa4bca4492c94f4048c8c5dd59e27b36329d4.tar.gz",
+      "hash": "19ykfqjgjgyxjy4chmlv9v8lsn4rnf0zw0fr2zd9rc85v4w39nlp"
+    },
+    "coc.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "neoclide",
+        "repo": "coc.nvim"
+      },
+      "branch": "release",
+      "revision": "cb17fb906a9b2248a6d07ba6820add84c8773200",
+      "url": "https://github.com/neoclide/coc.nvim/archive/cb17fb906a9b2248a6d07ba6820add84c8773200.tar.gz",
+      "hash": "11l3zy81kf8rp7v2c5cic1mb5bkaqa5y9x86zjgah3cpqjmkdvkd"
+    },
+    "fzf-lsp.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "gfanto",
+        "repo": "fzf-lsp.nvim"
+      },
+      "branch": "main",
+      "revision": "0694c278f081958e48f3a6e136c130d15cf8576e",
+      "url": "https://github.com/gfanto/fzf-lsp.nvim/archive/0694c278f081958e48f3a6e136c130d15cf8576e.tar.gz",
+      "hash": "03bg2ld2sh08zarjn5h4c4ypnr51k03qxpj8rk13vm6f6zfg9dnj"
+    },
+    "jq": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "stedolan",
+        "repo": "jq"
+      },
+      "branch": "master",
+      "revision": "f9afa950e26f5d548d955f92e83e6b8e10cc8438",
+      "url": "https://github.com/stedolan/jq/archive/f9afa950e26f5d548d955f92e83e6b8e10cc8438.tar.gz",
+      "hash": "0zxh9mwm6bg1skpihhq7292mxkw28gzsjdgdcrjbb1jzljqkkbkw"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixpkgs-unstable",
+      "revision": "52dc75a4fee3fdbcb792cb6fba009876b912bfe0",
+      "url": "https://github.com/nixos/nixpkgs/archive/52dc75a4fee3fdbcb792cb6fba009876b912bfe0.tar.gz",
+      "hash": "1mc7qncf38agvyd589akch0war71gx5xwfli9lh046xqsqsbhhl0"
+    },
+    "npins": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "andir",
+        "repo": "npins"
+      },
+      "branch": "master",
+      "revision": "ea72e4f1346e7dbdaf33b8a5c35a57faa097a214",
+      "url": "https://github.com/andir/npins/archive/ea72e4f1346e7dbdaf33b8a5c35a57faa097a214.tar.gz",
+      "hash": "1vkyfbhl665fcsjckcgxv1nicsj0rxpf86wa7b0bas31sv5468vw"
+    },
+    "pre-commit-hooks.nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "cachix",
+        "repo": "pre-commit-hooks.nix"
+      },
+      "branch": "master",
+      "revision": "521a524771a8e93caddaa0ac1d67d03766a8b0b3",
+      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/521a524771a8e93caddaa0ac1d67d03766a8b0b3.tar.gz",
+      "hash": "16qfrylk41r7gc7g4352hxz7b3vk9w7bc6893apmmr6yy08ra0m9"
+    },
+    "vim-operator-flashy": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "haya14busa",
+        "repo": "vim-operator-flashy"
+      },
+      "branch": "master",
+      "revision": "b24673a9b0d5d60b26d202deb13d4ebf90d7a2ae",
+      "url": "https://github.com/haya14busa/vim-operator-flashy/archive/b24673a9b0d5d60b26d202deb13d4ebf90d7a2ae.tar.gz",
+      "hash": "102va7cl1fyqm4yh0d6i773mgbfwlf9lpzc4sb3h2jgn7b1knr88"
+    },
+    "vim-plug": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "junegunn",
+        "repo": "vim-plug"
+      },
+      "branch": "master",
+      "revision": "8fdabfba0b5a1b0616977a32d9e04b4b98a6016a",
+      "url": "https://github.com/junegunn/vim-plug/archive/8fdabfba0b5a1b0616977a32d9e04b4b98a6016a.tar.gz",
+      "hash": "046j2cq4s14ys7n5b1lil5sgdis66mydd8bpsidcyq004k3zy2lc"
+    },
+    "vim-projectlocal": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "krisajenkins",
+        "repo": "vim-projectlocal"
+      },
+      "branch": "master",
+      "revision": "d1c3d84697727202917793b17f3e2a68fc9f09f5",
+      "url": "https://github.com/krisajenkins/vim-projectlocal/archive/d1c3d84697727202917793b17f3e2a68fc9f09f5.tar.gz",
+      "hash": "03g204zk0p33q72bkampk76m7r0zw25hxasfaisl4kdrrwpbkr9z"
+    },
+    "vim-solarized8": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "lifepillar",
+        "repo": "vim-solarized8"
+      },
+      "branch": "master",
+      "revision": "9f9b7951975012ce51766356c7c28ba56294f9e8",
+      "url": "https://github.com/lifepillar/vim-solarized8/archive/9f9b7951975012ce51766356c7c28ba56294f9e8.tar.gz",
+      "hash": "1qg9n6c70jyyh38fjs41j9vcj54qmhkkyzna0la7bwsycqfxbs2x"
+    },
+    "vim-textobj-entire": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "kana",
+        "repo": "vim-textobj-entire"
+      },
+      "branch": "master",
+      "revision": "64a856c9dff3425ed8a863b9ec0a21dbaee6fb3a",
+      "url": "https://github.com/kana/vim-textobj-entire/archive/64a856c9dff3425ed8a863b9ec0a21dbaee6fb3a.tar.gz",
+      "hash": "0kv0s85wbcxn9hrvml4hdzbpf49b1wwr3nk6gsz3p5rvfs6fbvmm"
+    },
+    "vim-textobj-line": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "kana",
+        "repo": "vim-textobj-line"
+      },
+      "branch": "master",
+      "revision": "1a6780d29adcf7e464e8ddbcd0be0a9df1a37339",
+      "url": "https://github.com/kana/vim-textobj-line/archive/1a6780d29adcf7e464e8ddbcd0be0a9df1a37339.tar.gz",
+      "hash": "0di9y3nbb9raj0lj7d76cjic4vs1msrqk3gzsl3r7b1qr0y3mdw7"
+    }
+  },
+  "version": 2
+}
