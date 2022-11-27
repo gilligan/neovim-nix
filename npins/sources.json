@@ -8,9 +8,9 @@
         "repo": "coc-rust-analyzer"
       },
       "branch": "master",
-      "revision": "6216a0c0e486dfd239eb7058b05e492c92c813e7",
-      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/6216a0c0e486dfd239eb7058b05e492c92c813e7.tar.gz",
-      "hash": "0savlb498b2977mqhm6y6b056njn38x82j111h0dah0mn1q8lcbr"
+      "revision": "005ca66aa30daca6e18474302009e73f30aa698d",
+      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/005ca66aa30daca6e18474302009e73f30aa698d.tar.gz",
+      "hash": "0lysnv3szrrmy54hsri1b5ninsmf699djcba47pxd3wz0jlkyga9"
     },
     "coc.nvim": {
       "type": "Git",
@@ -20,9 +20,9 @@
         "repo": "coc.nvim"
       },
       "branch": "release",
-      "revision": "54ae03ed6e0a5973464beffb0064fcee4cf730ed",
-      "url": "https://github.com/neoclide/coc.nvim/archive/54ae03ed6e0a5973464beffb0064fcee4cf730ed.tar.gz",
-      "hash": "0nrhyrxdvyizwip19rn56a9lixnhjaapagylf7fn6s32vxwsyawv"
+      "revision": "3339f975986e3f142af005aeb6ee2efef854ef9f",
+      "url": "https://github.com/neoclide/coc.nvim/archive/3339f975986e3f142af005aeb6ee2efef854ef9f.tar.gz",
+      "hash": "0qgrk55mbanff8dd399amwj6ydhm2ih7dfb989fqcqj5y4m0vqks"
     },
     "fzf-lsp.nvim": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "3b400a525d92e4085e46141ff48cbf89fd89739e",
-      "url": "https://github.com/nixos/nixpkgs/archive/3b400a525d92e4085e46141ff48cbf89fd89739e.tar.gz",
-      "hash": "0nlc2mvpi0sk5742yknmzmxbnyhvddfwpwx7zjq0klxy9nx6p1c4"
+      "revision": "b45ec953794bb07922f0468152ad1ebaf8a084b3",
+      "url": "https://github.com/nixos/nixpkgs/archive/b45ec953794bb07922f0468152ad1ebaf8a084b3.tar.gz",
+      "hash": "0kvqxs49hpsk9059algx96csb6n3zy70xn3rr3inlm0np8rlp1lj"
     },
     "npins": {
       "type": "Git",
@@ -68,9 +68,9 @@
         "repo": "npins"
       },
       "branch": "master",
-      "revision": "1205a5c7ff9c05fa2607220345eefcb539429419",
-      "url": "https://github.com/andir/npins/archive/1205a5c7ff9c05fa2607220345eefcb539429419.tar.gz",
-      "hash": "0knk20ygz4id8hw38fd61d70hm44gzjskrs1ij2ghkqcw02pcq1j"
+      "revision": "dd27bfb4fa8ae2c909b32686fe720104a207d39d",
+      "url": "https://github.com/andir/npins/archive/dd27bfb4fa8ae2c909b32686fe720104a207d39d.tar.gz",
+      "hash": "0l7wfqs0axryi75gsir3jv668fxlz9wnkrjwdcplls918xdmbzb5"
     },
     "pre-commit-hooks.nix": {
       "type": "Git",
