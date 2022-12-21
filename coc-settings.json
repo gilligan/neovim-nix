@@ -10,6 +10,25 @@
         "nix"
       ]
     },
+    "swift": {
+      "command": "sourcekit-lsp",
+      "args": [],
+      "filetypes": [
+        "swift"
+      ]
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": [
+        "rust"
+      ],
+      "rootPatterns": [
+        "Cargo.toml"
+      ],
+      "updates": {
+        "checkOnStartup": false
+      }
+    },
     "haskell": {
       "command": "haskell-language-server",
       "args": [
