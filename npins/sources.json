@@ -8,9 +8,9 @@
         "repo": "coc-rust-analyzer"
       },
       "branch": "master",
-      "revision": "4e46ee522c3134649335ecfda317e8ac6cb6b9a2",
-      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/4e46ee522c3134649335ecfda317e8ac6cb6b9a2.tar.gz",
-      "hash": "1jwn0vax3qmgjnw54mk42ly9ywaaibdqb637fidj981swky09i5p"
+      "revision": "9d8bdb9290e2a9644367594a1ceed0288506efcd",
+      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/9d8bdb9290e2a9644367594a1ceed0288506efcd.tar.gz",
+      "hash": "05n4biig56azxsaq6k11ic5p7r1ffz0i68w00w8rmyvmxlx11wyn"
     },
     "coc.nvim": {
       "type": "Git",
@@ -24,17 +24,17 @@
       "url": "https://github.com/neoclide/coc.nvim/archive/95b43f67147391cf2c69e550bd001b742781d226.tar.gz",
       "hash": "0rmva45znh39r4rhakk1zmqk9hrgi2d2daw8v1rfv1jd054w3vx1"
     },
-    "fzf-lsp.nvim": {
+    "fzf-lua": {
       "type": "Git",
       "repository": {
         "type": "GitHub",
-        "owner": "gfanto",
-        "repo": "fzf-lsp.nvim"
+        "owner": "ibhagwan",
+        "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "f8988d7d738a0e9e7aba2f0a9512df6356bbda07",
-      "url": "https://github.com/gfanto/fzf-lsp.nvim/archive/f8988d7d738a0e9e7aba2f0a9512df6356bbda07.tar.gz",
-      "hash": "1bl8a3mnz9p9a03pqq3gdxpfxk8j3pjj8g4828nca3df72nk9vrn"
+      "revision": "d9c9574b38e90bbbd19b241ba7cf7cbcb9afc549",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/d9c9574b38e90bbbd19b241ba7cf7cbcb9afc549.tar.gz",
+      "hash": "1z7ifmflbkdazxx6b7z8ibni08inyw7fxjn4593r20hy5zqwr6gh"
     },
     "jq": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "298add347c2bbce14020fcb54051f517c391196b",
-      "url": "https://github.com/nixos/nixpkgs/archive/298add347c2bbce14020fcb54051f517c391196b.tar.gz",
-      "hash": "0q0c6gf21rbfxvb9fvcmybvz9fxskbk324xbvqsh1dz2wzgylrja"
+      "revision": "35f1f865c03671a4f75a6996000f03ac3dc3e472",
+      "url": "https://github.com/nixos/nixpkgs/archive/35f1f865c03671a4f75a6996000f03ac3dc3e472.tar.gz",
+      "hash": "120cip1yn6g5hg35pwd07adr9h0i49g45pay77ix3yfr0nlcx2yh"
     },
     "npins": {
       "type": "Git",
@@ -80,9 +80,9 @@
         "repo": "pre-commit-hooks.nix"
       },
       "branch": "master",
-      "revision": "d0ce0a861260493c6c21f16f59d25076f73cb931",
-      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/d0ce0a861260493c6c21f16f59d25076f73cb931.tar.gz",
-      "hash": "1nf35c5zjninjfycbvdjh12z3y67jk1a6j05w6758dqvzng021dv"
+      "revision": "f8992fb404c7e79638192a10905b7ea985818050",
+      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/f8992fb404c7e79638192a10905b7ea985818050.tar.gz",
+      "hash": "11wkhnxb1g0wv3zqfryp0r7238gkfcw25xg048d4cys9g8dk99dz"
     },
     "vim-operator-flashy": {
       "type": "Git",
