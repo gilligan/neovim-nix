@@ -8,9 +8,9 @@
         "repo": "coc-rust-analyzer"
       },
       "branch": "master",
-      "revision": "9d8bdb9290e2a9644367594a1ceed0288506efcd",
-      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/9d8bdb9290e2a9644367594a1ceed0288506efcd.tar.gz",
-      "hash": "05n4biig56azxsaq6k11ic5p7r1ffz0i68w00w8rmyvmxlx11wyn"
+      "revision": "0bf5de909dfce12248b10462da41a33b810d46d1",
+      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/0bf5de909dfce12248b10462da41a33b810d46d1.tar.gz",
+      "hash": "0iwpkkhh525z1f84kydc5vsfnxrd897f3rs3yc85sx6ccsqp8fv1"
     },
     "coc.nvim": {
       "type": "Git",
@@ -20,9 +20,9 @@
         "repo": "coc.nvim"
       },
       "branch": "release",
-      "revision": "95b43f67147391cf2c69e550bd001b742781d226",
-      "url": "https://github.com/neoclide/coc.nvim/archive/95b43f67147391cf2c69e550bd001b742781d226.tar.gz",
-      "hash": "0rmva45znh39r4rhakk1zmqk9hrgi2d2daw8v1rfv1jd054w3vx1"
+      "revision": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043",
+      "url": "https://github.com/neoclide/coc.nvim/archive/bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043.tar.gz",
+      "hash": "116h45vnz98ni60i12f2z6rwz9gkpp1k4ysp1ry0qpjgmb5fcbsy"
     },
     "fzf-lua": {
       "type": "Git",
@@ -32,9 +32,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "d9c9574b38e90bbbd19b241ba7cf7cbcb9afc549",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/d9c9574b38e90bbbd19b241ba7cf7cbcb9afc549.tar.gz",
-      "hash": "1z7ifmflbkdazxx6b7z8ibni08inyw7fxjn4593r20hy5zqwr6gh"
+      "revision": "d666abc60fff12af9e91812666d42ff7f2555934",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/d666abc60fff12af9e91812666d42ff7f2555934.tar.gz",
+      "hash": "0ay8g2jda154d9fv2l4yi3v0sydq92i29nng9magm6g2p3rrym78"
     },
     "jq": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "35f1f865c03671a4f75a6996000f03ac3dc3e472",
-      "url": "https://github.com/nixos/nixpkgs/archive/35f1f865c03671a4f75a6996000f03ac3dc3e472.tar.gz",
-      "hash": "120cip1yn6g5hg35pwd07adr9h0i49g45pay77ix3yfr0nlcx2yh"
+      "revision": "126f49a01de5b7e35a43fd43f891ecf6d3a51459",
+      "url": "https://github.com/nixos/nixpkgs/archive/126f49a01de5b7e35a43fd43f891ecf6d3a51459.tar.gz",
+      "hash": "1py5hv3dk74fxxkhcpk3i63mqa78zhfb5xn94kqpih8gqhsklyjg"
     },
     "npins": {
       "type": "Git",
@@ -80,9 +80,9 @@
         "repo": "pre-commit-hooks.nix"
       },
       "branch": "master",
-      "revision": "f8992fb404c7e79638192a10905b7ea985818050",
-      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/f8992fb404c7e79638192a10905b7ea985818050.tar.gz",
-      "hash": "11wkhnxb1g0wv3zqfryp0r7238gkfcw25xg048d4cys9g8dk99dz"
+      "revision": "32b1dbedfd77892a6e375737ef04d8efba634e9e",
+      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/32b1dbedfd77892a6e375737ef04d8efba634e9e.tar.gz",
+      "hash": "0vprbpcrqr5jvwzmvqwb1w1wgqccrjz27fzg6iyh62zbqz9nnhxj"
     },
     "vim-operator-flashy": {
       "type": "Git",
@@ -104,9 +104,9 @@
         "repo": "vim-plug"
       },
       "branch": "master",
-      "revision": "ddce935b16fbaaf02ac96f9f238deb04d4d33a31",
-      "url": "https://github.com/junegunn/vim-plug/archive/ddce935b16fbaaf02ac96f9f238deb04d4d33a31.tar.gz",
-      "hash": "14fpa2z4cpb7if1wf4xkn7zqydhf7iz531lv3y5kvx3hp0yh02qi"
+      "revision": "034e8445908e828351da6e428022d8487c57ce99",
+      "url": "https://github.com/junegunn/vim-plug/archive/034e8445908e828351da6e428022d8487c57ce99.tar.gz",
+      "hash": "1xjvgzcr8l3f6wv82vla1nd5jxa32zdxgyw9fizf6xsm6m74n7jn"
     },
     "vim-projectlocal": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "vim-solarized8"
       },
       "branch": "master",
-      "revision": "9f9b7951975012ce51766356c7c28ba56294f9e8",
-      "url": "https://github.com/lifepillar/vim-solarized8/archive/9f9b7951975012ce51766356c7c28ba56294f9e8.tar.gz",
-      "hash": "1qg9n6c70jyyh38fjs41j9vcj54qmhkkyzna0la7bwsycqfxbs2x"
+      "revision": "bcd4e74e9850fd59ee0294a5c3ae958ed535cc52",
+      "url": "https://github.com/lifepillar/vim-solarized8/archive/bcd4e74e9850fd59ee0294a5c3ae958ed535cc52.tar.gz",
+      "hash": "00qhqy511wdcmlsglwhqsd6gffagjmdz0wl5627a3nwmxs8p45sa"
     },
     "vim-textobj-entire": {
       "type": "Git",
