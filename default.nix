@@ -126,7 +126,8 @@ let
           # lsp: coc
           #
           coc-nvim
-          (coc-rust-analyzer.overrideAttrs (old: { patches = [ ./patches/coc-rust-analyzer-path.patch ]; }))
+          coc-rust-analyzer
+          #(coc-rust-analyzer.overrideAttrs (old: { patches = [ ./patches/coc-rust-analyzer-path.patch ]; }))
           coc-json
           coc-fzf
           coc-yaml
