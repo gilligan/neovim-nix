@@ -10,11 +10,6 @@ let
 
   coc-settings = pkgs.writeTextDir "coc-settings.json" (builtins.readFile ./coc-settings.json);
 
-  solarized8 = buildVimPlugin {
-    name = "vim-solarized8-04-24-21";
-    src = pins.vim-solarized8;
-  };
-
   vim-textobj-line = buildVimPlugin {
     name = "textobj-line";
     src = pins.vim-textobj-line;
@@ -95,8 +90,7 @@ let
           #
           vim-airline
           vim-airline-themes
-          solarized8
-          haskell-vim
+          solarized-nvim
 
           #
           # terminal / process integration
@@ -133,6 +127,11 @@ let
           coc-yaml
           coc-snippets
           coc-vimlsp
+
+          #
+          # treesitter
+          #
+          nvim-treesitter.withAllGrammars
 
           #
           # local plugin settings
