@@ -60,3 +60,5 @@ augroup cline          " show cursorline only in active view/normal mode
     au WinLeave,InsertEnter * set nocursorline
     au WinEnter,InsertLeave * set cursorline
 augroup END
+
+let mapleader = ","

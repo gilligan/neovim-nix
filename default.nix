@@ -127,6 +127,8 @@ let
           coc-yaml
           coc-snippets
           coc-vimlsp
+          lsp_lines-nvim
+          coc-java
 
           #
           # treesitter
