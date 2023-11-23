@@ -8,9 +8,9 @@
         "repo": "coc-rust-analyzer"
       },
       "branch": "master",
-      "revision": "b9daee9e96cf729c1e1eee2596bb2e6569b5bf6c",
-      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/b9daee9e96cf729c1e1eee2596bb2e6569b5bf6c.tar.gz",
-      "hash": "0sizijfslr7imaaz9ncqn0475qhb2m0kjgibfkyrb6wa5xxm0r03"
+      "revision": "ff219423b2b8961f9d4d3949881928590af56f66",
+      "url": "https://github.com/fannheyward/coc-rust-analyzer/archive/ff219423b2b8961f9d4d3949881928590af56f66.tar.gz",
+      "hash": "1ci59ifxgga3ldi1ij4bcxhdmwlvx9nhhx2x966hbzs4f98p8mrv"
     },
     "coc.nvim": {
       "type": "Git",
@@ -20,9 +20,9 @@
         "repo": "coc.nvim"
       },
       "branch": "release",
-      "revision": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043",
-      "url": "https://github.com/neoclide/coc.nvim/archive/bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043.tar.gz",
-      "hash": "116h45vnz98ni60i12f2z6rwz9gkpp1k4ysp1ry0qpjgmb5fcbsy"
+      "revision": "7b9e1ef0a1399907c51d23b6080b94a5aba4a654",
+      "url": "https://github.com/neoclide/coc.nvim/archive/7b9e1ef0a1399907c51d23b6080b94a5aba4a654.tar.gz",
+      "hash": "10gdqqz71gbna9wy3awbncbn7m0g6wfn1256bx7ga8b3bsl3nmch"
     },
     "fzf-lua": {
       "type": "Git",
@@ -32,9 +32,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "e986af302b12f8c378294a16ac3b988f7fd45650",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/e986af302b12f8c378294a16ac3b988f7fd45650.tar.gz",
-      "hash": "00j5nwgr2vnbpvm96xgq6yhj004ml5zwxvvjqwa38bhw0vh5av9a"
+      "revision": "1e3308669ce77c86242d3ba5d75df0027a15391c",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/1e3308669ce77c86242d3ba5d75df0027a15391c.tar.gz",
+      "hash": "1jfg21z7j93x2q6iqg30cx8hd9qnx35lp3s0x81fiyhdg8v0gdf7"
     },
     "jq": {
       "type": "Git",
@@ -44,9 +44,9 @@
         "repo": "jq"
       },
       "branch": "master",
-      "revision": "7d424fd52ea9ea642dbb3283c07314fa3cbb550d",
-      "url": "https://github.com/stedolan/jq/archive/7d424fd52ea9ea642dbb3283c07314fa3cbb550d.tar.gz",
-      "hash": "0d1929ylnl1pcakzsl3n1kngdbkkyv5m62gcy20mcmni8fcn6scg"
+      "revision": "88f01a741c8d63c4d1b5bc3ef61520c6eb93edaa",
+      "url": "https://github.com/stedolan/jq/archive/88f01a741c8d63c4d1b5bc3ef61520c6eb93edaa.tar.gz",
+      "hash": "0005s4rwahw5hd600r2y1hr1fm3kzf8zlir9aw7xxgz15n2nb7gw"
     },
     "nixpkgs": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "0d5682acc109add20f70440269587a1b169cc2fe",
-      "url": "https://github.com/nixos/nixpkgs/archive/0d5682acc109add20f70440269587a1b169cc2fe.tar.gz",
-      "hash": "0xawvnmp5swmyavn0aclklf6msx3xavsc75hbwd08fnggh55qcf7"
+      "revision": "51a01a7e5515b469886c120e38db325c96694c2f",
+      "url": "https://github.com/nixos/nixpkgs/archive/51a01a7e5515b469886c120e38db325c96694c2f.tar.gz",
+      "hash": "1v9ijwflgzjxaaxsxv50dig5ggvfmdvrpnb32almpw9gdh54x65r"
     },
     "npins": {
       "type": "Git",
@@ -68,9 +68,9 @@
         "repo": "npins"
       },
       "branch": "master",
-      "revision": "356057e79c1ea2e524afed6a64e7e80c28562717",
-      "url": "https://github.com/andir/npins/archive/356057e79c1ea2e524afed6a64e7e80c28562717.tar.gz",
-      "hash": "0nq3rr0hg3qrax4b0ax3lwymvg25dq5rmjy93b42436n71k4jaf3"
+      "revision": "1de2ff57fdc4a7c446711d6273fc0230c8967420",
+      "url": "https://github.com/andir/npins/archive/1de2ff57fdc4a7c446711d6273fc0230c8967420.tar.gz",
+      "hash": "1ggv7w7dlqysi2hda9jsvwrpk8ppgbkaz7996gkv5ly3q2k8bin5"
     },
     "pre-commit-hooks.nix": {
       "type": "Git",
@@ -80,9 +80,9 @@
         "repo": "pre-commit-hooks.nix"
       },
       "branch": "master",
-      "revision": "f6a6863a3bcb61e846a9e4777b90ee365607a925",
-      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/f6a6863a3bcb61e846a9e4777b90ee365607a925.tar.gz",
-      "hash": "02x4libja5d3dz6ngrlcgn6j5v73rhwfk09s403f9qk1g41n5rcg"
+      "revision": "e558068cba67b23b4fbc5537173dbb43748a17e8",
+      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/e558068cba67b23b4fbc5537173dbb43748a17e8.tar.gz",
+      "hash": "02zyb35wcmgz827gwvpmfn41ym3mgm1hvzmf11alkwbf707qv5fm"
     },
     "vim-operator-flashy": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "vim-solarized8"
       },
       "branch": "master",
-      "revision": "53ab8f3132394e4315a29aea15bfdb83e39ed3b7",
-      "url": "https://github.com/lifepillar/vim-solarized8/archive/53ab8f3132394e4315a29aea15bfdb83e39ed3b7.tar.gz",
-      "hash": "17gcvzvngx2p03rg72j376yfs5z32c0rm6rdplr6sn97hxvd6rha"
+      "revision": "bde9cab3d9e9368f0b62f94149ab51607fcb8b68",
+      "url": "https://github.com/lifepillar/vim-solarized8/archive/bde9cab3d9e9368f0b62f94149ab51607fcb8b68.tar.gz",
+      "hash": "1di351q776ghw3y7yj494byrvd9c0zf6cxvcizk0jizdfvsib53k"
     },
     "vim-textobj-entire": {
       "type": "Git",
