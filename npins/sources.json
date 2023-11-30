@@ -32,9 +32,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "1e3308669ce77c86242d3ba5d75df0027a15391c",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/1e3308669ce77c86242d3ba5d75df0027a15391c.tar.gz",
-      "hash": "1jfg21z7j93x2q6iqg30cx8hd9qnx35lp3s0x81fiyhdg8v0gdf7"
+      "revision": "474af4d6e2f0ebfbb5df85ca7827b67949717bae",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/474af4d6e2f0ebfbb5df85ca7827b67949717bae.tar.gz",
+      "hash": "0236ccalzkwv2qzspqdglnkvpflzcppllp4v5bn6v1lbnlyqj7dm"
     },
     "jq": {
       "type": "Git",
@@ -44,9 +44,9 @@
         "repo": "jq"
       },
       "branch": "master",
-      "revision": "88f01a741c8d63c4d1b5bc3ef61520c6eb93edaa",
-      "url": "https://github.com/stedolan/jq/archive/88f01a741c8d63c4d1b5bc3ef61520c6eb93edaa.tar.gz",
-      "hash": "0005s4rwahw5hd600r2y1hr1fm3kzf8zlir9aw7xxgz15n2nb7gw"
+      "revision": "98a206964d59143c6ed9189b91cdb34af1ae5071",
+      "url": "https://github.com/stedolan/jq/archive/98a206964d59143c6ed9189b91cdb34af1ae5071.tar.gz",
+      "hash": "1d5yd5n7jc5pq4rnk7syl2n9nmzvq8qgkyi26s508maany8w6qj5"
     },
     "nixpkgs": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "51a01a7e5515b469886c120e38db325c96694c2f",
-      "url": "https://github.com/nixos/nixpkgs/archive/51a01a7e5515b469886c120e38db325c96694c2f.tar.gz",
-      "hash": "1v9ijwflgzjxaaxsxv50dig5ggvfmdvrpnb32almpw9gdh54x65r"
+      "revision": "85306ef2470ba705c97ce72741d56e42d0264015",
+      "url": "https://github.com/nixos/nixpkgs/archive/85306ef2470ba705c97ce72741d56e42d0264015.tar.gz",
+      "hash": "1yz6ppv389xj05bmamcg20iqax7dfw864hqikh4x6qs3jg37q9s7"
     },
     "npins": {
       "type": "Git",
@@ -80,9 +80,9 @@
         "repo": "pre-commit-hooks.nix"
       },
       "branch": "master",
-      "revision": "e558068cba67b23b4fbc5537173dbb43748a17e8",
-      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/e558068cba67b23b4fbc5537173dbb43748a17e8.tar.gz",
-      "hash": "02zyb35wcmgz827gwvpmfn41ym3mgm1hvzmf11alkwbf707qv5fm"
+      "revision": "e5ee5c5f3844550c01d2131096c7271cec5e9b78",
+      "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/e5ee5c5f3844550c01d2131096c7271cec5e9b78.tar.gz",
+      "hash": "1wxn3pgi8aa6l7p32z04midpp4cr45ar6v5gwhdwxryk3xr9ygbs"
     },
     "vim-operator-flashy": {
       "type": "Git",
