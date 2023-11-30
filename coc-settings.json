@@ -48,6 +48,17 @@
       "initializationOptions": {
         "haskell": {}
       }
+    },
+    "ocaml": {
+      "command": "ocamllsp",
+      "rootPatterns": [
+          "*.opam",
+          "dune-project"
+      ],
+      "filetypes": [
+        "ocaml",
+      ],
+
     }
   }
 }
