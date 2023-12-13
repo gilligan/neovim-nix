@@ -1,8 +1,8 @@
 {
   "coc.preferences.useQuickfixForLocations": true,
-  "rust-analyzer.updates.checkOnStartup": false,
   "suggest.noselect": false,
   "suggest.autoTrigger": "trigger",
+
   "languageserver": {
     "nix": {
       "command": "rnix-lsp",
@@ -24,10 +24,7 @@
       ],
       "rootPatterns": [
         "Cargo.toml"
-      ],
-      "updates": {
-        "checkOnStartup": false
-      }
+      ]
     },
     "haskell": {
       "command": "haskell-language-server-wrapper",

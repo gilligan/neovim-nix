@@ -103,8 +103,10 @@ let
           nerdcommenter
           zoomwintab-vim
           fzf-vim
+          fzf-hoogle-vim
           nerdtree
           nerdtree-git-plugin
+          oil-nvim
 
           #
           # misc
@@ -115,25 +117,25 @@ let
           neoformat
           vim-projectlocal
           vim-devicons
+          nvim-comment
 
           #
           # lsp: coc
           #
           coc-nvim
           coc-rust-analyzer
-          #(coc-rust-analyzer.overrideAttrs (old: { patches = [ ./patches/coc-rust-analyzer-path.patch ]; }))
           coc-json
           coc-fzf
           coc-yaml
           coc-snippets
           coc-vimlsp
-          lsp_lines-nvim
           coc-java
 
           #
           # treesitter
           #
           nvim-treesitter.withAllGrammars
+          nvim-treesitter-textobjects
 
           #
           # local plugin settings
