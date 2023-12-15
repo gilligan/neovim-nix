@@ -44,9 +44,9 @@
         "repo": "jq"
       },
       "branch": "master",
-      "revision": "c3b14967d3bcb11a53989de4e26093198459c962",
-      "url": "https://github.com/stedolan/jq/archive/c3b14967d3bcb11a53989de4e26093198459c962.tar.gz",
-      "hash": "0vandsw3dh2hhids102ki8hhs0915j9332qbfklaca1nyq08qpyp"
+      "revision": "95c50a2d0d9a982d348aa772d32d3b4352227cdc",
+      "url": "https://github.com/stedolan/jq/archive/95c50a2d0d9a982d348aa772d32d3b4352227cdc.tar.gz",
+      "hash": "1smpj2bpfx2y9mgdgmq8m9fy4brsmncr8796pfbvb7127ins5b7k"
     },
     "nixpkgs": {
       "type": "Git",
@@ -56,9 +56,9 @@
         "repo": "nixpkgs"
       },
       "branch": "nixpkgs-unstable",
-      "revision": "e97b3e4186bcadf0ef1b6be22b8558eab1cdeb5d",
-      "url": "https://github.com/nixos/nixpkgs/archive/e97b3e4186bcadf0ef1b6be22b8558eab1cdeb5d.tar.gz",
-      "hash": "114ggf0xbwq16djg4qql3jljknk9xr8h7dw18ccalwqg9k1cgv0g"
+      "revision": "aa9d4729cbc99dabacb50e3994dcefb3ea0f7447",
+      "url": "https://github.com/nixos/nixpkgs/archive/aa9d4729cbc99dabacb50e3994dcefb3ea0f7447.tar.gz",
+      "hash": "1dbkg2b7fpxapwh30pk191rmiwx2fgg9qls628lv4x2cjcdi2wia"
     },
     "npins": {
       "type": "Git",
