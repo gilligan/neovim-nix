@@ -49,6 +49,7 @@ set updatetime=300
 set viminfo=%,!,'50,\"100,:100,n~/.viminfo
 set wildignore+=*.so,*.swp,*.zip " ignore patterns for completion
 set wmh=0            " minimal window height is 0
+set termguicolors
 
 filetype plugin indent on
 syntax on
